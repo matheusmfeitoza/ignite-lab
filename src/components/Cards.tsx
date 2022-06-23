@@ -18,7 +18,7 @@ export function Cards(props: CardsProps) {
               <strong className='block font-bold text-2xl'>{props.title}</strong>
               <span className='block text-sm text-gray-200'>{props.content}</span>
           </div>
-          <div className='h-full p-6 flex items-center ml-16'>
+          <div className='h-full p-6 flex items-center'>
               <CaretRight size={props.rightArrowSize} />
           </div>
         </a>
