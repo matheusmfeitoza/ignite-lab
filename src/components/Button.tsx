@@ -3,6 +3,7 @@ interface ButtonProps {
   variant: "primary" | "secundary" | "default";
   text: string;
   iconSize?: number;
+  type?: string;
 }
 export function Button(props: ButtonProps) {
   return props.variant === "primary" ? (

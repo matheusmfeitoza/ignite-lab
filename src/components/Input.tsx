@@ -1,8 +1,12 @@
-interface InputProps {
+import { ChangeEvent, InputHTMLAttributes } from "react";
+
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   type: string;
   placeholder: string;
   name?: string;
   id?: string;
+  value?: string;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export function Input(props: InputProps) {
@@ -13,6 +17,8 @@ export function Input(props: InputProps) {
       placeholder={props.placeholder}
       name={props.name}
       id={props.id}
+      value={props.value}
+      onChange={props.onChange}
     />
   );
 }
