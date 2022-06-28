@@ -2,6 +2,7 @@ import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Input } from "../components/Input";
 import { Logo } from "../components/Logo";
+import { CodePhoto } from "../components/CodePhoto";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
 export function Subscribe() {
@@ -74,11 +75,7 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <img
-        src="/src/assets/print-code.png"
-        alt="Imagem de um código"
-        className="mt-10"
-      />
+      <CodePhoto />
     </div>
   );
 }
